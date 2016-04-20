@@ -1,18 +1,33 @@
 What happens when you initialize a repository? Why do you need to do it?
+	
+	Initializing a repository generates .git folder with default configurations and make working directory to be associated with git repository. This will setup fundamental stuff required for git initialization. With this, GIT will keep track of all activity that we save.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	
+	Staging area is intermediate place where changes come to this place before commiting to repository. This allows us to commit one-by-one changes and commit all changes together in single commit. This helps us to make single logical commit with multiple files.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	Staging area can have multiple files (changes) within it. And we can bundle our changes in single commit by picking up required files for one single logical commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branches would be very useful when situations like we need to add new feature, fixing a bug, doing an experiment, etc... at the same time not affecting current (stable) master branch code base. We can create another branch from master and checkout the same and making commit on new branch. so that master branch would be in working state always while other activity is on other branch.
+
 How do the diagrams help you visualize the branch structure?
+
+	Diagram provides information about its parent of each commit. I can easily trace out changes in case of multiple branches. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	
+	Merging two branches together becomes one combined branch with both branch changes (commits). Representing in diagram gives clear picture of its parents and origin. This helps us to identify whether branches are merged appropriatly. 
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+	
+	pros: automatic merging saves lots of time to merge all users work. 
+	cons: it can lead to certain bugs introduction. some user may have removed function from class which is getting called from different class and there is no conflict there, then running such code can cause application crash. 
