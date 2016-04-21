@@ -32,4 +32,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When I will be working with larger group (multiple users), I would definately be working in separate branch to keep track of changes of others work and my work. This will help me to identify/review changes before they come to master branch.
