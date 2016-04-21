@@ -6,22 +6,28 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Manual pulling code ensures that currently working code should not be changed automatically, if git pulls latest commit automatically. 
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+	All these three options useful when we don't want to disturb current code base by keeping another copy of same working code base.
+
+    Forks: This is github feature to copy existing someone's repository to our repository. This is similar to clone but we can copy repository to another on Github only. I can not fork repository to my local.
+
+    Clones: This is to copy one repository to another. We can clone any Git repository to anywhere we have access to.
+
+    Branchs: This is used when we want to add new changes to a repository while keeping reference to a previous version, especially when collaborating with other people.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    With the "Fetch" command, we can achieve this. With this feature, we can update local reposiroty with latest changes on remote. so that if i dont have internet accees, then still i can come to know, if i will have conflicts with my work and can resolve conflicts offline and then pushed work to remote, when internet it available again.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Without Git or Github, it's very difficult to work with muliple user on same code base. We can use other alternatives like Dropbox or GoogleDocs. They are easier in the way that they are auto committing & pushing work while we are connected to internet. Harder is that, it can lead us to unstable code base when multiple user works on same file. It can create chaos.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
